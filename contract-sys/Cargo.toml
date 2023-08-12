@@ -1,0 +1,23 @@
+[package]
+name = "contract-sys"
+version = "0.1.1"
+edition = "2021"
+authors = [
+  "Mike Zeller <mike@mikezeller.net>",
+]
+license = "MIT"
+description = "FFI bindings to libcontract"
+repository = "https://github.com/papertigers/contract-rs"
+readme = "README.md"
+categories = ["illumos", "external-ffi-bindings", "os::illumos-apis"]
+keywords = ["illumos", "libcontract"]
+links = "libcontract"
+
+[package.metadata.docs.rs]
+targets = [
+  "x86_64-unknown-illumos",
+]
+
+
+[build-dependencies]
+bindgen = "0.66.1"
